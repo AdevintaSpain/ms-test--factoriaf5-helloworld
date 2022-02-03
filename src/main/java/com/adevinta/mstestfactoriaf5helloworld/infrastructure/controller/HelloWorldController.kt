@@ -12,7 +12,5 @@ class HelloWorldController(
 ) {
 
   @GetMapping
-  fun sayHello(): String {
-    return helloWorldService.hello()
-  }
+  fun sayHello() = helloWorldService.hello()
 }

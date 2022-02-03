@@ -31,6 +31,11 @@ dependencies {
   implementation("org.springframework.boot:spring-boot-starter-security")
   implementation("org.springframework.cloud:spring-cloud-starter-bootstrap")
 
+  // Database
+  implementation("org.springframework.boot:spring-boot-starter-jdbc")
+  implementation("org.postgresql:postgresql:42.3.1")
+  implementation("org.flywaydb:flyway-core:8.4.2")
+
   // Kotlin
   implementation("org.jetbrains.kotlin:kotlin-reflect")
   implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")

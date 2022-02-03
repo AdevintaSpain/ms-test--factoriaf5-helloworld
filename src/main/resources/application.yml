@@ -8,6 +8,20 @@ spring:
     user:
       name: "ac92fad6c"
       password: "c2712584c"
+  datasource:
+    url: "jdbc:postgresql://${database.host}:${database.port}/${database.name}"
+    username: "${database.username}"
+    password: "${database.password}"
+    driver-class-name: "org.postgresql.Driver"
+  flyway:
+    enabled: true
+
+database:
+  host: "localhost"
+  port: 5432
+  name: "f5"
+  username: "root"
+  password: "mypassword"
 
 server:
   port: 8000

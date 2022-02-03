@@ -4,6 +4,7 @@ import com.adevinta.mstestfactoriaf5helloworld.infrastructure.Application
 import io.restassured.module.mockmvc.RestAssuredMockMvc.given
 import io.restassured.module.mockmvc.RestAssuredMockMvc.mockMvc
 import org.hamcrest.Matchers.equalTo
+import org.hamcrest.Matchers.matchesPattern
 import org.junit.jupiter.api.AfterEach
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
@@ -58,7 +59,7 @@ abstract class ApplicationTestCase {
       .get("/hello")
       .then()
       .assertThat(status().isOk)
-      .body(equalTo("Hello Coders!!!"))
+      .body(matchesPattern(".+ Coders!!!"))
   }
 
   @Test
