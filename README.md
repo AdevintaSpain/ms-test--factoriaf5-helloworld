@@ -12,21 +12,21 @@ See also [🌍 MicroServices Hello World Live from Twitch!](https://github.com/A
 
 ### Create repo
 * Clone/fork this repo or create your own using [spring initializr](https://start.spring.io/#!type=gradle-project&language=kotlin&platformVersion=2.6.3&packaging=jar&jvmVersion=11&groupId=com.adevinta.factoriaf5&artifactId=HelloWorld&name=HelloWorld&description=Demo%20project%20for%20Spring%20Boot&packageName=com.adevinta.factoriaf5.HelloWorld)
-* [Setup Continuous Integration using Github Actions](https://github.com/AdevintaSpain/ms-test--factoriaf5-helloworld/pull/1)
+* [Setup Continuous Integration using Github Actions](https://github.com/AdevintaSpain/ms-test--factoriaf5-helloworld/pull/1/files)
 
 ### Session 1
 
 ![Session1](doc/session1.png)
 
-* [Apply Adevinta Spain MicroServices Template](https://github.com/AdevintaSpain/ms-test--factoriaf5-helloworld/pull/2)
+* [Apply Adevinta Spain MicroServices Template](https://github.com/AdevintaSpain/ms-test--factoriaf5-helloworld/pull/2/files)
 
 ### Session 2
 
 ![Session2](doc/session2.png)
 
-* [Create HelloWorldService](https://github.com/AdevintaSpain/ms-test--factoriaf5-helloworld/pull/4)
-* [Create HelloWorldRepository](https://github.com/AdevintaSpain/ms-test--factoriaf5-helloworld/pull/5)
-* [Create HelloWorldRepository JDBC implementation](https://github.com/AdevintaSpain/ms-test--factoriaf5-helloworld/pull/6)
+* [Create HelloWorldService](https://github.com/AdevintaSpain/ms-test--factoriaf5-helloworld/pull/4/files)
+* [Create HelloWorldRepository](https://github.com/AdevintaSpain/ms-test--factoriaf5-helloworld/pull/5/files)
+* [Create HelloWorldRepository JDBC implementation](https://github.com/AdevintaSpain/ms-test--factoriaf5-helloworld/pull/6/files)
 
 ## Run
 
