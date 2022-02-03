@@ -11,16 +11,12 @@ class HelloWorldServiceTest {
 
   @Test
   fun `should say greeting`() {
-    // given
     val helloWorldRepository = mock<HelloWorldRepository>()
     doReturn("Hola").whenever(helloWorldRepository).greeting()
-    val helloWorldService = HelloWorldService(helloWorldRepository)
 
-    // when
+    val helloWorldService = HelloWorldService(helloWorldRepository)
     val helloWorldMessage = helloWorldService.hello()
 
-    // then
-    assertThat(helloWorldMessage)
-      .isEqualTo("Hola Coders!!!")
+    assertThat(helloWorldMessage).isEqualTo("Hola Coders!!!")
   }
 }
