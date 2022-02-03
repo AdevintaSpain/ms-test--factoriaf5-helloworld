@@ -23,6 +23,7 @@ Sample used in Adevinta Spain's [Factoria F5](https://factoriaf5.org/) mastercla
 ![Session2](doc/session2.png)
 
 * [Create HelloWorldService](https://github.com/AdevintaSpain/ms-test--factoriaf5-helloworld/pull/4)
+* [Create HelloWorldRepository](https://github.com/AdevintaSpain/ms-test--factoriaf5-helloworld/pull/5)
 
 ## Run
 

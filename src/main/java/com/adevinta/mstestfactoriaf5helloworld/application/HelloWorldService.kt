@@ -1,6 +1,8 @@
 package com.adevinta.mstestfactoriaf5helloworld.application
 
-class HelloWorldService {
+import com.adevinta.mstestfactoriaf5helloworld.domain.HelloWorldRepository
 
-  fun hello() = "Hello Coders!!!"
+class HelloWorldService(private val helloWorldRepository: HelloWorldRepository) {
+
+  fun hello() = "${helloWorldRepository.greeting()} Coders!!!"
 }
