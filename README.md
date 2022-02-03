@@ -8,15 +8,22 @@ Sample used in Adevinta Spain's [Factoria F5](https://factoriaf5.org/) mastercla
 
 ## Develop
 
-1. Clone/fork this repo or create your own using [spring initializr](https://start.spring.io/#!type=gradle-project&language=kotlin&platformVersion=2.6.3&packaging=jar&jvmVersion=11&groupId=com.adevinta.factoriaf5&artifactId=HelloWorld&name=HelloWorld&description=Demo%20project%20for%20Spring%20Boot&packageName=com.adevinta.factoriaf5.HelloWorld)
-2. [Setup Continuous Integration using Github Actions](https://github.com/AdevintaSpain/ms-test--factoriaf5-helloworld/pull/1)
-3. [Apply Adevinta Spain MicroServices Template](https://github.com/AdevintaSpain/ms-test--factoriaf5-helloworld/pull/2)
+### Create repo
+* Clone/fork this repo or create your own using [spring initializr](https://start.spring.io/#!type=gradle-project&language=kotlin&platformVersion=2.6.3&packaging=jar&jvmVersion=11&groupId=com.adevinta.factoriaf5&artifactId=HelloWorld&name=HelloWorld&description=Demo%20project%20for%20Spring%20Boot&packageName=com.adevinta.factoriaf5.HelloWorld)
+* [Setup Continuous Integration using Github Actions](https://github.com/AdevintaSpain/ms-test--factoriaf5-helloworld/pull/1)
+
+### Session 1
+* [Apply Adevinta Spain MicroServices Template](https://github.com/AdevintaSpain/ms-test--factoriaf5-helloworld/pull/2)
+
+![Session1](doc/session1.png)
 
 ## Run
 
 ```
 docker-compose up -d
 ./gradlew bootRun
+
+curl http://localhost/hello
 ```
 
 ## Test
