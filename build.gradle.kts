@@ -40,6 +40,11 @@ dependencies {
 
   // Test
   testImplementation("org.springframework.boot:spring-boot-starter-test")
+  testImplementation("org.mockito:mockito-inline:4.2.0")
+  testImplementation("org.mockito:mockito-junit-jupiter:4.2.0")
+  testImplementation("org.assertj:assertj-core:3.22.0")
+  testImplementation("org.jetbrains.kotlin:kotlin-test:1.6.0")
+  testImplementation("org.jetbrains.kotlin:kotlin-test-junit5:1.6.0")
   testImplementation("com.nhaarman:mockito-kotlin:1.6.0")
 
   // Integration Test

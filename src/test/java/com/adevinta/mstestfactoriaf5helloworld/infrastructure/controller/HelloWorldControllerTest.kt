@@ -26,7 +26,7 @@ class HelloWorldControllerTest {
   private lateinit var mvc: MockMvc
 
   @Test
-  fun shouldSayHello() {
+  fun `should say hello`() {
     val helloWorldMessage = "Hello Coders from Mock HelloWorldService!!!"
     doReturn(helloWorldMessage).whenever(helloWorldService).hello()
 
