@@ -24,6 +24,7 @@ Sample used in Adevinta Spain's [Factoria F5](https://factoriaf5.org/) mastercla
 
 * [Create HelloWorldService](https://github.com/AdevintaSpain/ms-test--factoriaf5-helloworld/pull/4)
 * [Create HelloWorldRepository](https://github.com/AdevintaSpain/ms-test--factoriaf5-helloworld/pull/5)
+* [Create HelloWorldRepository JDBC implementation](https://github.com/AdevintaSpain/ms-test--factoriaf5-helloworld/pull/6)
 
 ## Run
 
