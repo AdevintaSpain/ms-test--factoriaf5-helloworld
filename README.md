@@ -22,6 +22,8 @@ Sample used in Adevinta Spain's [Factoria F5](https://factoriaf5.org/) mastercla
 ```
 docker-compose up -d
 ./gradlew bootRun
+
+curl http://localhost/hello
 ```
 
 ## Test
