@@ -52,3 +52,4 @@ curl http://localhost/hello
 * [Docker desktop](https://www.docker.com/products/docker-desktop)
 * [IntelliJ Idea](https://www.jetbrains.com/idea/) or any other IDE you like
 * Any [OpenJDK Java 11](https://en.wikipedia.org/wiki/OpenJDK) like [Adoptium](https://adoptium.net/)
+* [DBeaver](https://dbeaver.io/download/) or any other database tool to connect to postgres
