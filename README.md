@@ -2,9 +2,11 @@
 
 # ms-test--factoriaf5-helloworld
 
-HelloWorld for Factoria F5
+🏫 HelloWorld for Factoria F5
 
 Sample used in Adevinta Spain's [Factoria F5](https://factoriaf5.org/) masterclasses
+
+See also [🌍 MicroServices Hello World Live from Twitch!](https://github.com/AdevintaSpain/ms-test--hello-twitch)
 
 ## Develop
 
