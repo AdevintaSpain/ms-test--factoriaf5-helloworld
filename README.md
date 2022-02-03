@@ -2,7 +2,7 @@
 
 # ms-test--factoriaf5-helloworld
 
-🏫 HelloWorld for Factoria F5
+🏫 HelloWorld for Factoria F5 Bootcamp
 
 Sample used in Adevinta Spain's [Factoria F5](https://factoriaf5.org/) masterclasses
 
