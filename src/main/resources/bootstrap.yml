@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: ms-test--factoriaf5-helloworld
+  cloud:
+    config:
+      enabled: false

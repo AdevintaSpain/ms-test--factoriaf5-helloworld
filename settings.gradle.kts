@@ -1,1 +1,1 @@
-rootProject.name = "HelloWorld"
+rootProject.name = "ms-test--factoriaf5-helloworld"

@@ -1,34 +1,75 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+import org.gradle.api.tasks.testing.logging.TestExceptionFormat.FULL
+import org.gradle.api.tasks.testing.logging.TestLogEvent.*
 
 plugins {
-	id("org.springframework.boot") version "2.6.3"
-	id("io.spring.dependency-management") version "1.0.11.RELEASE"
-	kotlin("jvm") version "1.6.10"
-	kotlin("plugin.spring") version "1.6.10"
+  id("org.springframework.boot") version "2.5.6"
+  id("io.spring.dependency-management") version "1.0.11.RELEASE"
+  id("org.unbroken-dome.test-sets") version "4.0.0"
+  kotlin("jvm") version "1.6.10"
+  kotlin("plugin.spring") version "1.6.10"
 }
 
 group = "com.adevinta.factoriaf5"
 version = "0.0.1-SNAPSHOT"
 java.sourceCompatibility = JavaVersion.VERSION_11
 
+extra["springCloudVersion"] = "2020.0.4"
+
 repositories {
-	mavenCentral()
+  mavenCentral()
+}
+
+testSets {
+  create("integrationTest") {}
 }
 
 dependencies {
-	implementation("org.springframework.boot:spring-boot-starter")
-	implementation("org.jetbrains.kotlin:kotlin-reflect")
-	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
-	testImplementation("org.springframework.boot:spring-boot-starter-test")
+  // Spring
+  implementation("org.springframework.boot:spring-boot-starter-web")
+  implementation("org.springframework.boot:spring-boot-starter-actuator")
+  implementation("org.springframework.boot:spring-boot-starter-security")
+  implementation("org.springframework.cloud:spring-cloud-starter-bootstrap")
+
+  // Kotlin
+  implementation("org.jetbrains.kotlin:kotlin-reflect")
+  implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+
+  // Api Docs
+  implementation("io.springfox:springfox-boot-starter:3.0.0")
+
+  // Test
+  testImplementation("org.springframework.boot:spring-boot-starter-test")
+  testImplementation("com.nhaarman:mockito-kotlin:1.6.0")
+
+  // Integration Test
+  "integrationTestImplementation"("io.rest-assured:spring-mock-mvc:4.5.0")
+  "integrationTestImplementation"("org.testcontainers:testcontainers:1.16.3")
+}
+
+dependencyManagement {
+  imports {
+    mavenBom("org.springframework.cloud:spring-cloud-dependencies:${property("springCloudVersion")}")
+  }
 }
 
 tasks.withType<KotlinCompile> {
-	kotlinOptions {
-		freeCompilerArgs = listOf("-Xjsr305=strict")
-		jvmTarget = "11"
-	}
+  kotlinOptions {
+    freeCompilerArgs = listOf("-Xjsr305=strict")
+    jvmTarget = "11"
+  }
 }
 
 tasks.withType<Test> {
-	useJUnitPlatform()
+  useJUnitPlatform()
+  testLogging {
+    events(PASSED, SKIPPED, FAILED)
+    exceptionFormat = FULL
+    showExceptions = true
+    showCauses = true
+    showStackTraces = true
+  }
 }
+
+tasks["check"].dependsOn("integrationTest")
+tasks["integrationTest"].shouldRunAfter("test")
