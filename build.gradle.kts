@@ -8,6 +8,7 @@ plugins {
   id("org.unbroken-dome.test-sets") version "4.0.0"
   kotlin("jvm") version "1.6.10"
   kotlin("plugin.spring") version "1.6.10"
+  id("idea")
 }
 
 group = "com.adevinta.factoriaf5"
