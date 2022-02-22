@@ -2,7 +2,7 @@
 
 # ms-test--factoriaf5-helloworld
 
-🏫 HelloWorld demo for [Factoria F5](https://factoriaf5.org/) Bootcamp
+🏫 HelloWorld Workshop for [Factoria F5](https://factoriaf5.org/) Bootcamp
 
 See also [🌍 MicroServices Hello World Live from Twitch!](https://github.com/AdevintaSpain/ms-test--hello-twitch)
 
